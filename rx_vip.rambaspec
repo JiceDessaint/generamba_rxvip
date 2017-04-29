@@ -1,0 +1,24 @@
+# Template information section
+name: "rx_vip"
+summary: "Swift VIP module template with Rx support."
+author: "Jean-Charles Dessaint"
+version: "0.1.0"
+license: "MIT"
+
+# The declarations for code files
+
+code_files:
+- {name: ViewController.swift, path: Code/viewcontroller.swift.liquid}
+- {name: Presenter.swift, path: Code/presenter.swift.liquid}
+- {name: Interactor.swift, path: Code/interactor.swift.liquid}
+- {name: Flow.swift, path: Code/flow.swift.liquid}
+- {name: RoutingEntry.swift, path: Code/routingEntry.swift.liquid}
+
+# The declarations for test files
+test_files:
+
+# Configurators tests
+- {name: ViewControllerTests.swift, path: Tests/viewcontroller_tests.swift.liquid}
+- {name: InteractorTests.swift, path: Tests/interactor_tests.swift.liquid}
+- {name: PresenterTests.swift, path: Tests/presenter_tests.swift.liquid}
+- {name: RoutingEntryTests.swift, path: Tests/routingentry_tests.swift.liquid}

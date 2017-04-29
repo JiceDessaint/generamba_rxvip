@@ -1,0 +1,43 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import UIKit
+import RxCocoa
+import RxSwift
+
+class {{ module_info.name }}ViewController: UIViewController {
+
+    // MARK: - Properties & Constructors
+    let disposeBag = DisposeBag()
+    var interactor: EnterMailInteractorInputs!
+    var presenter: EnterMailPresenterOutputs? {
+        didSet { bindUI() }
+    }
+
+    // MARK: - Lifecycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        bindEvents()
+    }
+
+    // MARK: - Outputs Bindings
+    private func bindEvents() {
+    	// view.element
+    	//     .bind(to: interactor.myBinding)
+    	//     .addDisosableTo(disposeBag)
+    }
+
+    // MARK: - Input Bindings
+    private func bindUI() {
+        // presenter?.stateObservable
+        //    .bind(to: typedView.submitButton.rx.isEnabled)
+        //    .addDisposableTo(disposeBag)
+    }
+
+}
+

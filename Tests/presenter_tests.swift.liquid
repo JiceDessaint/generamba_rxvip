@@ -1,0 +1,43 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+
+
+import Foundation
+import XCTest
+import RxSwift
+@testable import {{ module_info.project_name }}
+
+class {{ module_info.name }}PresenterTests: XCTestCase {
+
+    private let interactor = MockInteractor()
+    private var presenter: {{ module_info.name }}Presenter!
+    //var lastObservedValue: {{ module_info.name }}.ViewModel.MyValue
+    private let disposeBag = DisposeBag()
+
+    override func setUp() {
+        presenter = EnterMailPresenter(interactor: interactor)
+        //presenter.MyValue.subscribe(onNext: { self.lastObservedValue = $0 }).addDisposableTo(disposeBag)
+    }
+
+    // MARK: - Use Case 1 Test
+    func test_submitState_shouldEmitTrue_whenReceivedTrueFromInteractor() {
+        // Given
+        // When
+        // Then
+        XCTFail()
+    }
+
+    // MARK: - Mocks
+    struct MockInteractor: {{ module_info.name }}InteractorOutputs {
+        //var _myMockedValue = Variable<{{ module_info.name }}.Response.MyResponse>({{ module_info.name }}.Response.MyResponse(value: true))
+        //var mockedValue: Observable<{{ module_info.name }}.Response.MyResponse> {
+        //    return _isMailValid.asObservable()
+        //}
+    }
+}

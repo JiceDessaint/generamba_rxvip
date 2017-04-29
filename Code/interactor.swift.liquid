@@ -1,0 +1,36 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import RxSwift
+import RxCocoa
+
+protocol {{ module_info.name }}InteractorInputs {
+    // var bindableInput: Variable<{{ module_info.name }}.Request.MyRequest> { get }
+    // func executeAction(action: {{ module_info.name }}.Request.OtherRequest)
+}
+
+protocol {{ module_info.name }}InteractorOutputs {
+    // var outputVariable: Observable<{{ module_info.name }}.Response.MyResponse> { get }
+}
+
+struct {{ module_info.name }}Interactor: {{ module_info.name }}InteractorOutputs, {{ module_info.name }}InteractorInputs {
+
+    // MARK: - Properties & Constructors
+
+    init() {
+    }
+
+    // MARK: - Inputs
+    // var bindableInput = Variable<{{ module_info.name }}.Request.MyRequest>({{ module_info.name }}.Request.MyRequest())
+
+    // MARK: - Outputs
+    // var outputVariable: Observable<{{ module_info.name }}.Response.MyResponse> {
+    //    return ...
+    //}
+}

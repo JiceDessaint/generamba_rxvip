@@ -1,0 +1,35 @@
+//
+//  {{ prefix }}{{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import XCTest
+import RxSwift
+@testable import {{ module_info.project_name }}
+
+class {{ module_info.name }}InteractorTests: XCTestCase {
+
+    private var interactor: {{ module_info.name }}Interactor!
+    private let disposeBag = DisposeBag()
+
+    //private var lastObservedValue: {{ module_info.name }}.Response.MyResponse
+
+    override func setUp() {
+        self.interactor = {{ module_info.name }}Interactor()
+        //interactor.observedValue.subscribe(onNext: { self.lastObservedValue = $0 }).addDisposableTo(disposeBag)
+    }
+
+    // MARK: - Test Case 1
+    func test_{{ module_info.name }}1() {
+        // Given
+        // When
+        // Then
+        XCTFail()
+    }
+
+    // MARK: - Mocks
+    // Implement specific Mocks here if any
+}

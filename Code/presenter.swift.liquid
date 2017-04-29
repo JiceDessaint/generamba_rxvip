@@ -1,0 +1,30 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+import RxSwift
+
+protocol {{ module_info.name }}PresenterOutputs {
+    // var observableState: Observable<{{ module_info.name }}.ViewModel.MyState> { get }
+}
+
+struct {{ module_info.name }}Presenter: {{ module_info.name }}PresenterOutputs {
+
+	// MARK: - Properties & Constructors
+	private let interactor: {{ module_info.name }}InteractorOutputs
+
+    init(interactor: {{ module_info.name }}InteractorOutputs) {
+        self.interactor = interactor
+    }
+
+    // MARK: - Outputs
+    var observableState: Observable<{{ module_info.name }}.ViewModel.MyState> {
+        //return interactor.....map { }
+    }
+
+}

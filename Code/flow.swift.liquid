@@ -1,0 +1,31 @@
+//
+//  {{ module_info.name }}{{ module_info.file_name }}
+//  {{ module_info.project_name }}
+//
+//  Created by {{ developer.name }} on {{ date }}.
+//  Copyright © {{ year }} {{ developer.company }}. All rights reserved.
+//
+
+import Foundation
+
+// swiftlint:disable nesting
+struct {{ module_info.name }} {
+
+    struct Request {
+        struct UseCase1 {
+            let value: String?
+        }
+    }
+    struct Response {
+        struct UseCase1 {
+            let value: Bool
+        }
+    }
+
+    struct ViewModel {
+        struct UseCase1 {
+            let value: Bool
+        }
+    }
+}
+
